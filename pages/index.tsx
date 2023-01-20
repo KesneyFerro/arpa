@@ -183,7 +183,7 @@ const Home: NextPage = () => {
               <span className="text-[#7E2626]">por um Band melhor</span>.
             </FactBox>
 
-            <FactBox title="Nosso Objetivo" number={2} color={"#FF7E35"}>
+            <FactBox title="Como Funciona" number={2} color={"#FF7E35"}>
               Realizamos{" "}
               <span className="text-[#7E2626]">resumos e vídeo-aulas</span> para
               te ajudar nas avaliações do colégio, afinal sabemos como é
@@ -199,15 +199,16 @@ const Home: NextPage = () => {
               <span className="text-[#7E2626]">
                 <a className="underline">instagram</a>
               </span>
+              .
             </FactBox>
 
-            <FactBox title="Nosso Objetivo" number={3} color={"#D23636"}>
+            <FactBox title="Faça Parte" number={3} color={"#D23636"}>
               Nossa equipe é composta por alunos interessados em colaborar com a
               comunidade do Bandeirantes. Durante o ano,{" "}
               <span className="text-[#7E2626]">
                 <a className="underline">abrimos vagas para monitores</a>
               </span>{" "}
-              realocando membros em suas respectivas séries
+              realocando membros em suas respectivas séries.
             </FactBox>
           </div>
         </div>
