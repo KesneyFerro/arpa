@@ -243,11 +243,16 @@ const Home: NextPage = () => {
               className="h-[600px] absolute right-0 top-[-200px]"
               draggable="false"
             />
+            <div className="invDiv2Decoration absolute w-full h-full z-[0]">
+              <img
+                src="/blob_background/overlaping circles.svg"
+                alt=""
+                className="top-0 left-0 absolute w-[200px]"
+                draggable="false"
+              />
+            </div>
           </div>
         </div>
-        <footer className="w-full z-10 relative bottom-0 flex justify-center drop-shadow-[-10_0px_14px_rgba(0,0,0,0.15)">
-          <img src="footerBg.svg w-[100vw] h-auto" alt="" />
-        </footer>
       </main>
     </HomeCointainer>
   );
