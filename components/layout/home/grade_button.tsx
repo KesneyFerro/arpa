@@ -44,28 +44,32 @@ const GradeButon = ({
             <img
               src={image}
               alt={alt}
-              className="absolute min-w-[160px] bottom-[-40%] left-[-25%] sm:left-[-50px] sm:bottom-[-150px] lg:min-w-[270px] lg:bottom-[-100px] lg:left-[-20px] xl:left-[0px]"
+              className="absolute min-w-[160px] bottom-[calc(40%*((w-full)/236))] left-[-25%] sm:left-[-50px] sm:bottom-[-130px] lg:min-w-[270px] lg:bottom-[-100px] lg:left-[-20px] xl:left-[0px]"
+              draggable="false"
             ></img>
           )}
           {alt == "c2" && (
             <img
               src={image}
               alt={alt}
-              className="absolute max-w-[320px] min-w-[180px] bottom-[-32%] left-[5%] sm:left-[20px] sm:min-w-[360px] sm:bottom-[-70px] lg:min-w-[400px] lg:bottom-[-60px] lg:left-[-20px] xl:left-[0px]"
+              className="absolute min-w-[160px]  right-[0%] bottom-[calc(40%*((w-full)/236))] sm:bottom-[-90px] lg:scale-x-[-1] lg:right-auto lg:min-w-[270px] lg:bottom-[-40px]"
+              draggable="false"
             ></img>
           )}
           {alt == "c3" && (
             <img
               src={image}
               alt={alt}
-              className="absolute min-w-[180px] left-[-25%] sm:left-[-10%] scale-x-[-1] lg:scale-x-[1] lg:min-w-[300px] lg:left-[10px] lg:bottom-[-80px]"
+              className="absolute min-w-[160px] scale-x-[-1] bottom-[calc(40%*((w-full)/236))] left-[-25%] sm:left-[-50px] sm:bottom-[-110px] lg:left-auto lg:scale-x-[1] lg:min-w-[270px] lg:bottom-[-70px] lg:right-[-50px]"
+              draggable="false"
             ></img>
           )}
           {alt == "c4" && (
             <img
               src={image}
               alt={alt}
-              className="absolute min-w-[230px] scale-x-[-1] lg:scale-x-[1] left-[10%] bottom-[-65px] sm:min-w-[300px] sm:left-[30px] sm:bottom-[-80px] lg:min-w-[380px] lg:left-[-120px] lg:bottom-[-120px]"
+              className="absolute min-w-[160px] scale-x-[-1] bottom-[calc(20%*(_w-full_/236))] right-[-25%] sm:right-[-50px] sm:bottom-[-135px] lg:scale-x-[1] lg:min-w-[270px] lg:bottom-[-140px] lg:left-[-50px]"
+              draggable="false"
             ></img>
           )}
         </div>

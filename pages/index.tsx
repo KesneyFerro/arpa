@@ -142,25 +142,25 @@ const Home: NextPage = () => {
             <img
               src="/blob_background/black_stripes.svg"
               alt=""
-              className="top-28 left-[2%] absolute w-[80px]"
+              className="top-28 left-[2%] absolute w-[80px] lg:w-[120px] lg:top-[70px] xl:w-[140px] xl:top-[20px]"
               draggable="false"
             />
             <img
               src="/blob_background/red_trail_yellow.svg"
               alt=""
-              className="bottom-[-50px] left-[0%] absolute w-[80px]"
+              className="bottom-[0px] left-[-5%] absolute w-[130px] lg:w-[180px] lg:left-[-6%] xl:w-[190px] xl:left-[-2%]"
               draggable="false"
             />
             <img
               src="/blob_background/red_trail_green.svg"
               alt=""
-              className="top-[20px] right-0 absolute w-[150px]"
+              className=" top-[20px] right-0 absolute w-[150px] lg:w-[170px]  lg:top-[-10px] xl:w-[180px]  xl:top-[-50px]"
               draggable="false"
             />
             <img
               src="/blob_background/green.svg"
               alt=""
-              className="bottom-[20px] right-[5%] absolute w-[30px]"
+              className="bottom-[350px] right-[2%] absolute w-[70px] lg:bottom-[160px]"
               draggable="false"
             />
           </div>
@@ -210,6 +210,36 @@ const Home: NextPage = () => {
               </span>{" "}
               realocando membros em suas respectivas séries.
             </FactBox>
+          </div>
+        </div>
+
+        <div className="invitationJoinUs mt-[200px] w-full h-[auto] bg-[#032440] shadow-[0_-35px_0px_0px_#04121E] rounded-tl-[100px] flex flex-col lg:flex-row">
+          <div className="invDivision1 flex flex-col justify-start items-start sm:justify-center sm:items-center mt-[70px] mx-[50px] sm:mx-[100px] z-[1]">
+            <div className="mainInvDiv1">
+              <h3 className="text-white w-full font-semibold text-2xl flex flex-col  items-center sm:text-center">
+                Gostou da Proposta???{" "}
+                <span className="my-[15px] block h-[4px] w-full bg-gradient-to-r from-[rgba(97,163,217,1)] to-[rgba(24,92,150,0)] rounded-full sm:text-center" />
+              </h3>
+              <h4 className="text-white text-sm font-extralight text-justify mt-[15px] sm:text-center">
+                Quanto mais ajuda melhor! O ARPA está de portas abertas para
+                você. Se for bom em fazer resumos ou dar aulas, entre para o
+                ARPA!
+                <br />
+                <br />
+                Preencha o formulário e faça parte do projeto.
+              </h4>
+            </div>
+            <button className="buttonInvDiv1 mt-[50px] bg-white rounded-full font-semibold text-lg text-[#153046] px-[20px] py-[15px] mb-[50px]">
+              Junte-se a nós
+            </button>
+          </div>
+          <div className="invDivision2 w-full h-full z-[0]">
+            <img
+              src="teamIllustration.svg"
+              alt=""
+              className="h-[800px] right-0 top-[0]"
+              draggable="false"
+            />
           </div>
         </div>
       </main>
