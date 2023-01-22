@@ -247,7 +247,7 @@ const Home: NextPage = () => {
               <img
                 src="/blob_background/overlaping circles.svg"
                 alt=""
-                className="top-[-100%] left-0 absolute w-[200px]"
+                className="top-[-100%] left-2 absolute w-[200px]"
                 draggable="false"
               />
             </div>
