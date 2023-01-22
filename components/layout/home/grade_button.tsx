@@ -39,7 +39,7 @@ const GradeButon = ({
         >
           <h3 className="p-10 font-semibold text-white text-xl">{title}</h3>
         </div>
-        <div className="z-0 insideImage09 w-full h-full relative">
+        <div className="z-0 insideImage w-full h-full relative">
           {alt == "c1" && (
             <img
               src={image}
@@ -51,21 +51,21 @@ const GradeButon = ({
             <img
               src={image}
               alt={alt}
-              className="absolute min-w-[280px] bottom-[-32%] right-[-60%] sm:left-[20px] sm:min-w-[360px] sm:bottom-[-70px] lg:min-w-[400px] lg:bottom-[-60px] lg:left-[-20px] xl:left-[0px]"
+              className="absolute max-w-[320px] min-w-[180px] bottom-[-32%] left-[5%] sm:left-[20px] sm:min-w-[360px] sm:bottom-[-70px] lg:min-w-[400px] lg:bottom-[-60px] lg:left-[-20px] xl:left-[0px]"
             ></img>
           )}
           {alt == "c3" && (
             <img
               src={image}
               alt={alt}
-              className="absolute min-w-[300px] right-[-75px] bottom-[-80px]"
+              className="absolute min-w-[180px] left-[-25%] sm:left-[-10%] scale-x-[-1] lg:scale-x-[1] lg:min-w-[300px] lg:left-[10px] lg:bottom-[-80px]"
             ></img>
           )}
           {alt == "c4" && (
             <img
               src={image}
               alt={alt}
-              className="absolute min-w-[380px] left-[-120px] bottom-[-120px]"
+              className="absolute min-w-[230px] scale-x-[-1] lg:scale-x-[1] left-[10%] bottom-[-65px] sm:min-w-[300px] sm:left-[30px] sm:bottom-[-80px] lg:min-w-[380px] lg:left-[-120px] lg:bottom-[-120px]"
             ></img>
           )}
         </div>

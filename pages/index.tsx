@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 
       <main className="mt-[70px]">
         <div className="contentHomePage relative">
-          <div className="absolute w-full h-full z-[0]">
+          <div className="absolute w-full h-full z-[0] mt-10">
             <img
               src="/blob_background/red_stripes.svg"
               alt=""
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className="contentHomeAboutUs relative my-[100px] w-full flex items-center flex-col">
-          <div className="absolute w-full h-full z-[0]">
+          <div className="absolute w-full h-full z-[0] mt-24">
             <img
               src="/blob_background/black_stripes.svg"
               alt=""
