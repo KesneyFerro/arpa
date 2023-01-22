@@ -247,12 +247,36 @@ const Home: NextPage = () => {
               <img
                 src="/blob_background/overlaping circles.svg"
                 alt=""
-                className="top-0 left-0 absolute w-[200px]"
+                className="top-[-100%] left-0 absolute w-[200px]"
                 draggable="false"
               />
             </div>
           </div>
         </div>
+        <footer className="relative flex flex-col items-center">
+          <div className="bgFooter overflow-hidden absolute w-full top-[-130px] sm:top-[-px]">
+            <img
+              src="footerBg2.png"
+              alt=""
+              className="w-full h-[350px] sm:h-[450px] lg:h-[600px] xl:h-[700px] 2xl:h-[780px]"
+            />
+          </div>
+          <div className="contentFooter">
+            <div className="decorationFooter absolute w-full h-auto z-10"></div>
+            <div className="mainFooter">
+              <div className="logoFooter rounded-full bg-white h-10 w-10"></div>
+              <h3 className="text-blue text-md font-semibold"></h3>
+              <div className="mediaFooter flex flex-row justify-between gap-3">
+                <span className="p-3 bg-white"></span>
+                <span className="p-3 bg-white"></span>
+                <span className="p-3 bg-white"></span>
+                <span className="p-3 bg-white"></span>
+              </div>
+              <hr className="w-10 h-1 my-10" />
+              <div className="rightsFooter"></div>
+            </div>
+          </div>
+        </footer>
       </main>
     </HomeCointainer>
   );
