@@ -216,14 +216,14 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className="invitationJoinUs overflow-hidden mt-[200px] w-full h-[800px] bg-[#032440] shadow-[0_-35px_0px_0px_#04121E] rounded-tl-[100px] flex flex-col lg:flex-row">
-          <div className="invDivision1 flex flex-col justify-start items-start sm:justify-center sm:items-center mt-[70px] mx-[50px] sm:mx-[100px] z-[1]">
-            <div className="mainInvDiv1">
-              <h3 className="text-white w-full font-semibold text-2xl flex flex-col  items-center sm:text-center">
+        <div className="invitationJoinUs relative overflow-hidden mt-[200px] w-full h-[800px] bg-[#032440] shadow-[0_-35px_0px_0px_#04121E] rounded-tl-[100px] flex flex-col sm:rounded-tl-[150px] lg:flex-row">
+          <div className="invDivision1 flex flex-col items-start sm:justify-center sm:items-center mt-[70px] mx-[50px] sm:mx-[100px] z-[1] lg:w-[500px] lg:items-start lg:justify-start">
+            <div className="mainInvDiv1 flex flex-col items-start">
+              <h3 className="text-white w-full font-semibold text-2xl flex flex-col sm:text-center lg:text-justify lg:text-4xl">
                 Gostou da Proposta???{" "}
-                <span className="my-[15px] block h-[4px] w-full bg-gradient-to-r from-[rgba(97,163,217,1)] to-[rgba(24,92,150,0)] rounded-full sm:text-center" />
+                <span className="my-[15px] block h-[4px] w-full bg-gradient-to-r from-[rgba(97,163,217,1)] to-[rgba(24,92,150,0)] rounded-full sm:text-center lg:my-[20px] lg:h-[6px]" />
               </h3>
-              <h4 className="text-white text-sm font-extralight text-justify mt-[15px] sm:text-center">
+              <h4 className="text-white text-sm font-extralight text-justify mt-[15px] sm:text-center lg:text-justify lg:text-lg lg:mt-[20px]">
                 Quanto mais ajuda melhor! O ARPA está de portas abertas para
                 você. Se for bom em fazer resumos ou dar aulas, entre para o
                 ARPA!
@@ -232,29 +232,35 @@ const Home: NextPage = () => {
                 Preencha o formulário e faça parte do projeto.
               </h4>
             </div>
-            <button className="buttonInvDiv1 mt-[50px] bg-white rounded-full font-semibold text-lg text-[#153046] px-[20px] py-[15px] mb-[50px]">
+            <button className="buttonInvDiv1 my-[50px] bg-white rounded-full font-semibold text-lg text-[#153046] px-[20px] py-[15px] lg:my-[60px] lg:text-xl lg:px-[30px]">
               Junte-se a nós
             </button>
           </div>
-          <div className="invDivision2 relative w-full h-full z-[0]">
+          <div className="invDivision2 absolute w-full h-full z-[0]">
             <img
-              src="teamIllustration.svg"
+              src="teamIllustration1.svg"
               alt=""
-              className="h-[600px] absolute right-0 top-[-200px]"
-              draggable="false"
+              className="hidden lg:block absolute w-[800px] right-[-25%] top-[-50px] xl:right-auto xl:left-[45%]"
+              draggable="true"
+            />
+            <img
+              src="teamIllustration2.svg"
+              alt=""
+              className="block lg:hidden absolute w-[550px] bottom-[-50px] left-[35%] sm:min-w-[650px] sm:left-auto sm:right-[-22%] sm:bottom-[-70px] lg:w-[700px] lg:bottom-auto lg:right-[-7%] lg:top-[-50px] xl:right-auto xl:left-[650px]"
+              draggable="true"
             />
             <div className="invDiv2Decoration absolute w-full h-full z-[0]">
               <img
                 src="/blob_background/overlaping circles.svg"
                 alt=""
-                className="top-[-100%] left-2 absolute w-[200px]"
+                className="top-[0] left-0 absolute w-[200px] sm:w-[250px]"
                 draggable="false"
               />
             </div>
           </div>
         </div>
         <footer className="relative flex flex-col items-center">
-          <div className="bgFooter overflow-hidden absolute w-full top-[-130px] sm:top-[-px]">
+          <div className="bgFooter overflow-hidden absolute w-full top-[-130px] sm:top-[-150px]">
             <img
               src="footerBg2.png"
               alt=""
