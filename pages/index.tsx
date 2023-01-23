@@ -216,8 +216,8 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className="invitationJoinUs relative overflow-hidden mt-[200px] w-full h-[800px] bg-[#032440] shadow-[0_-35px_0px_0px_#04121E] rounded-tl-[100px] flex flex-col sm:rounded-tl-[150px] lg:flex-row">
-          <div className="invDivision1 flex flex-col items-start sm:justify-center sm:items-center mt-[70px] mx-[50px] sm:mx-[100px] z-[1] lg:w-[500px] lg:items-start lg:justify-start">
+        <div className="invitationJoinUs relative overflow-hidden mt-[200px] w-full h-[800px] bg-[#032440] shadow-[0_-35px_0px_0px_#04121E] rounded-tl-[100px] flex flex-col sm:rounded-tl-[150px] lg:flex-row lg:rounded-tl-[200px]">
+          <div className="invDivision1 flex flex-col items-start sm:justify-center sm:items-center mt-[70px] mx-[50px] sm:mx-[100px] z-[1] lg:w-[500px] lg:items-start lg:justify-start lg:mx-[125px]">
             <div className="mainInvDiv1 flex flex-col items-start">
               <h3 className="text-white w-full font-semibold text-2xl flex flex-col sm:text-center lg:text-justify lg:text-4xl">
                 Gostou da Proposta???{" "}
@@ -240,20 +240,32 @@ const Home: NextPage = () => {
             <img
               src="teamIllustration1.svg"
               alt=""
-              className="hidden lg:block absolute w-[800px] right-[-25%] top-[-50px] xl:right-auto xl:left-[45%]"
-              draggable="true"
+              className="hidden lg:block absolute w-[800px] right-[-25%] top-[-50px] xl:right-auto xl:left-[55%]"
+              draggable="false"
             />
             <img
               src="teamIllustration2.svg"
               alt=""
-              className="block lg:hidden absolute w-[550px] bottom-[-50px] left-[35%] sm:min-w-[650px] sm:left-auto sm:right-[-22%] sm:bottom-[-70px] lg:w-[700px] lg:bottom-auto lg:right-[-7%] lg:top-[-50px] xl:right-auto xl:left-[650px]"
-              draggable="true"
+              className="block lg:hidden absolute w-[550px] bottom-[-50px] left-[35%] sm:min-w-[650px] sm:left-auto sm:right-[-22%] sm:bottom-[-70px]"
+              draggable="false"
             />
             <div className="invDiv2Decoration absolute w-full h-full z-[0]">
               <img
                 src="/blob_background/overlaping circles.svg"
                 alt=""
                 className="top-[0] left-0 absolute w-[200px] sm:w-[250px]"
+                draggable="false"
+              />
+              <img
+                src="/blob_background/triangular_blob.svg"
+                alt=""
+                className="absolute hidden lg:block lg:right-auto lg:w-[350px] lg:top-[250px] lg:left-[35%] xl:left-[45%]"
+                draggable="false"
+              />
+              <img
+                src="/blob_background/multi_square_blob.svg"
+                alt=""
+                className="absolute w-[500px] left-[100px] bottom-[100px]"
                 draggable="false"
               />
             </div>
