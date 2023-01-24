@@ -3,6 +3,9 @@ import Head from "next/head";
 import React from "react";
 import { HomeCointainer } from "../styles/components/home";
 import { BsCaretDownFill } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsYoutube } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 import Navbar from "../components/layout/navbar";
 import GradeButon from "../components/layout/home/grade_button";
@@ -217,7 +220,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className="invitationJoinUs relative overflow-hidden mt-[200px] w-full h-[800px] bg-[#032440] shadow-[0_-35px_0px_0px_#04121E] rounded-tl-[100px] flex flex-col sm:rounded-tl-[150px] lg:flex-row lg:rounded-tl-[200px]">
-          <div className="invDivision1 flex flex-col items-start sm:justify-center sm:items-center mt-[70px] mx-[50px] sm:mx-[100px] z-[1] lg:w-[500px] lg:items-start lg:justify-start lg:mx-[125px]">
+          <div className="invDivision1 flex flex-col items-start sm:justify-center sm:items-center mt-[70px] mx-[50px] sm:mx-[100px] z-[2] lg:w-[500px] lg:items-start lg:justify-start lg:mx-[125px]">
             <div className="mainInvDiv1 flex flex-col items-start">
               <h3 className="text-white w-full font-semibold text-2xl flex flex-col sm:text-center lg:text-justify lg:text-4xl">
                 Gostou da Proposta???{" "}
@@ -240,13 +243,13 @@ const Home: NextPage = () => {
             <img
               src="teamIllustration1.svg"
               alt=""
-              className="hidden lg:block absolute w-[800px] right-[-25%] top-[-50px] xl:right-auto xl:left-[55%]"
+              className="z-[1] hidden lg:block absolute w-[800px] right-[-25%] top-[-50px] xl:right-auto xl:left-[55%] xl:w-[850px]"
               draggable="false"
             />
             <img
               src="teamIllustration2.svg"
               alt=""
-              className="block lg:hidden absolute w-[550px] bottom-[-50px] left-[35%] sm:min-w-[650px] sm:left-auto sm:right-[-22%] sm:bottom-[-70px]"
+              className="z-[1] block lg:hidden absolute w-[550px] bottom-[-50px] left-[35%] sm:min-w-[650px] sm:left-auto sm:right-[-22%] sm:bottom-[-70px]"
               draggable="false"
             />
             <div className="invDiv2Decoration absolute w-full h-full z-[0]">
@@ -259,19 +262,31 @@ const Home: NextPage = () => {
               <img
                 src="/blob_background/triangular_blob.svg"
                 alt=""
-                className="absolute hidden lg:block lg:right-auto lg:w-[350px] lg:top-[250px] lg:left-[35%] xl:left-[45%]"
+                className="absolute hidden lg:block lg:right-auto lg:w-[350px] lg:top-[250px] lg:left-[35%] xl:left-[40%]"
                 draggable="false"
               />
               <img
-                src="/blob_background/multi_square_blob.svg"
+                src="/blob_background/multisquare_blob.svg"
                 alt=""
-                className="absolute w-[500px] left-[100px] bottom-[100px]"
+                className="absolute w-[300px] left-[-80px] bottom-[30px] sm:left-[-90px] sm:bottom-[0px] sm:w-[350px]"
+                draggable="false"
+              />
+              <img
+                src="/blob_background/semi_circle_blob.svg"
+                alt=""
+                className="absolute w-[150px] bottom-[400px] left-[-50px]"
+                draggable="false"
+              />
+              <img
+                src="/blob_background/join_us_dot_grid.svg"
+                alt=""
+                className="absolute hidden lg:block lg:w-[200px] lg:right-0 lg:top-0"
                 draggable="false"
               />
             </div>
           </div>
         </div>
-        <footer className="relative flex flex-col items-center">
+        <footer className="relative flex flex-col items-center h-[450px] lg:h-[600px] xl:h-[700px] 2xl:h-[780px]">
           <div className="bgFooter overflow-hidden absolute w-full top-[-130px] sm:top-[-150px]">
             <img
               src="footerBg2.png"
@@ -279,19 +294,37 @@ const Home: NextPage = () => {
               className="w-full h-[350px] sm:h-[450px] lg:h-[600px] xl:h-[700px] 2xl:h-[780px]"
             />
           </div>
-          <div className="contentFooter">
-            <div className="decorationFooter absolute w-full h-auto z-10"></div>
-            <div className="mainFooter">
-              <div className="logoFooter rounded-full bg-white h-10 w-10"></div>
-              <h3 className="text-blue text-md font-semibold"></h3>
-              <div className="mediaFooter flex flex-row justify-between gap-3">
-                <span className="p-3 bg-white"></span>
-                <span className="p-3 bg-white"></span>
-                <span className="p-3 bg-white"></span>
-                <span className="p-3 bg-white"></span>
+          <div className="contentFooter absolute h-full w-full bottom-0">
+            <div className="decorationFooter absolute w-full h-full z-10"></div>
+            <div className="mainFooter absolute flex flex-col items-center justify-end  w-full h-full">
+              <div className="logoFooter rounded-full bg-black h-[100px] w-[100px] shadow-xl"></div>
+              <h3 className="text-xl text-[#032440] font-bold mt-[20px]">
+                ESTUDE, VOCÊ CONSEGUE!
+              </h3>
+              <div className="mediaFooter flex flex-col sm:flex-row justify-between gap-[5px] sm:gap-3 my-[20px] sm:my-[40px]">
+                <div className="rowDivision1MediaFooter gap-[5px]">
+                  <button className="p-[25px] bg-white rounded-full">
+                    <BsInstagram className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
+                  </button>
+                  <button className="p-[25px] bg-white rounded-full">
+                    <BsYoutube className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
+                  </button>
+                </div>
+                <div className="rowDivision2MediaFooter gap-[5px]">
+                  <button className="p-[25px] bg-white rounded-full">
+                    <MdEmail className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
+                  </button>
+                  <button className="p-[25px] bg-white rounded-full">
+                    <BsInstagram className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
+                  </button>
+                </div>
               </div>
-              <hr className="w-10 h-1 my-10" />
-              <div className="rightsFooter"></div>
+              <hr className="w-[90%] h-[5px] bg-black rounded-full" />
+              <div className="rightsFooter">
+                <h4 className="text-center text-base text-[#032440] font-semibold my-[30px] sm:my-[40px]">
+                  &copy; 2023 ARPA - Todos os direitos reservados
+                </h4>
+              </div>
             </div>
           </div>
         </footer>
