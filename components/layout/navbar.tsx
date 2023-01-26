@@ -14,8 +14,8 @@ const Navbar = () => {
           <div id="logo" className="mr-5">
             <img
               alt="Logo Arpa"
-              src="/arpa_logo.png"
-              className="min-w-[29px]"
+              src="/arpa_logo.svg"
+              className="min-w-[60px]"
             />
           </div>
           <h1 className="tracking-[.15em] text-[1.75rem] font-bold text-[#87ABD5]">

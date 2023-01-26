@@ -297,7 +297,13 @@ const Home: NextPage = () => {
           <div className="contentFooter absolute h-full w-full bottom-0">
             <div className="decorationFooter absolute w-full h-full z-10"></div>
             <div className="mainFooter absolute flex flex-col items-center justify-end  w-full h-full">
-              <div className="logoFooter rounded-full bg-black h-[100px] w-[100px] shadow-xl"></div>
+              <div className="logoFooter rounded-full bg-white h-[100px] w-[100px] shadow-xl flex  items-center justify-center">
+                <img
+                  src="arpa_logo.svg"
+                  alt="logo"
+                  className="min-w-[29px] font-bold"
+                />
+              </div>
               <h3 className="text-xl text-[#032440] font-bold mt-[20px]">
                 ESTUDE, VOCÊ CONSEGUE!
               </h3>
