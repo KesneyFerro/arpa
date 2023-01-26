@@ -11,10 +11,10 @@ const Navbar = () => {
     <header className="z-10 sticky top-0 flex justify-center backdrop-blur-3xl  drop-shadow-[0_2px_14px_rgba(0,0,0,0.15)] bg-[#FDFDFD]/80 h-[100px]">
       <nav className="z-[9] flex justify-between max-w-[1500px] px-[30px]  navbar  w-full h-full ">
         <div className="visualID flex items-center">
-          <div id="logo" className="mr-5">
+          <div id="logo" className="mr-[10px]">
             <img
               alt="Logo Arpa"
-              src="/arpa_logo.svg"
+              src="/new_arpa_logo.svg"
               className="min-w-[60px]"
             />
           </div>
@@ -29,14 +29,14 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="text-center">
-            <a href=" " className="text-center">
+            <Link href={"/"} className="text-center">
               Resumos
-            </a>
+            </Link>
           </li>
           <li className="text-center">
-            <a href=" " className="text-center">
+            <Link href={"/"} className="text-center">
               Conteúdos
-            </a>
+            </Link>
           </li>
           <li className="text-center">
             <Link href={"/contato"} className="text-center">
@@ -44,14 +44,14 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="text-center">
-            <a href=" " className="text-center">
+            <Link href={"/"} className="text-center">
               Faça Parte
-            </a>
+            </Link>
           </li>
           <li className="text-center">
-            <a href=" " className="text-center">
+            <Link href={"/"} className="text-center">
               Conheça o Projeto
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="hidden lg:flex buttonNavbar items-center drop-shadow-md">

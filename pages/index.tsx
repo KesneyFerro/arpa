@@ -3,11 +3,9 @@ import Head from "next/head";
 import React from "react";
 import { HomeCointainer } from "../styles/components/home";
 import { BsCaretDownFill } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
 
 import Navbar from "../components/layout/navbar";
+import Footer from "../components/layout/arpa_footer";
 import GradeButon from "../components/layout/home/grade_button";
 import FactBox from "../components/layout/home/facts";
 import BlueButton from "../components/layout/blue_button";
@@ -249,7 +247,7 @@ const Home: NextPage = () => {
             <img
               src="teamIllustration2.svg"
               alt=""
-              className="z-[1] block lg:hidden absolute w-[550px] bottom-[-50px] left-[35%] sm:min-w-[650px] sm:left-auto sm:right-[-22%] sm:bottom-[-70px]"
+              className="z-[1] block lg:hidden absolute min-w-[600px] bottom-[-70px] right-[-300px] sm:min-w-[650px] sm:left-auto sm:right-[-22%] sm:bottom-[-70px]"
               draggable="false"
             />
             <div className="invDiv2Decoration absolute w-full h-full z-[0]">
@@ -268,7 +266,7 @@ const Home: NextPage = () => {
               <img
                 src="/blob_background/multisquare_blob.svg"
                 alt=""
-                className="absolute w-[300px] left-[-80px] bottom-[30px] sm:left-[-90px] sm:bottom-[0px] sm:w-[350px]"
+                className="absolute w-[250px] left-[-120px] bottom-[-20px] sm:left-[-90px] sm:bottom-[0px] sm:w-[300px]"
                 draggable="false"
               />
               <img
@@ -286,54 +284,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <footer className="relative flex flex-col items-center h-[450px] lg:h-[600px] xl:h-[700px] 2xl:h-[780px]">
-          <div className="bgFooter overflow-hidden absolute w-full top-[-130px] sm:top-[-150px]">
-            <img
-              src="footerBg2.png"
-              alt=""
-              className="w-full h-[350px] sm:h-[450px] lg:h-[600px] xl:h-[700px] 2xl:h-[780px]"
-            />
-          </div>
-          <div className="contentFooter absolute h-full w-full bottom-0">
-            <div className="decorationFooter absolute w-full h-full z-10"></div>
-            <div className="mainFooter absolute flex flex-col items-center justify-end  w-full h-full">
-              <div className="logoFooter rounded-full bg-white h-[100px] w-[100px] shadow-xl flex  items-center justify-center">
-                <img
-                  src="arpa_logo.svg"
-                  alt="logo"
-                  className="min-w-[29px] font-bold"
-                />
-              </div>
-              <h3 className="text-xl text-[#032440] font-bold mt-[20px]">
-                ESTUDE, VOCÊ CONSEGUE!
-              </h3>
-              <div className="mediaFooter flex flex-col sm:flex-row justify-between gap-[5px] sm:gap-3 my-[20px] sm:my-[40px]">
-                <div className="rowDivision1MediaFooter gap-[5px]">
-                  <button className="p-[25px] bg-white rounded-full">
-                    <BsInstagram className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
-                  </button>
-                  <button className="p-[25px] bg-white rounded-full">
-                    <BsYoutube className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
-                  </button>
-                </div>
-                <div className="rowDivision2MediaFooter gap-[5px]">
-                  <button className="p-[25px] bg-white rounded-full">
-                    <MdEmail className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
-                  </button>
-                  <button className="p-[25px] bg-white rounded-full">
-                    <BsInstagram className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
-                  </button>
-                </div>
-              </div>
-              <hr className="w-[90%] h-[5px] bg-black rounded-full" />
-              <div className="rightsFooter">
-                <h4 className="text-center text-base text-[#032440] font-semibold my-[30px] sm:my-[40px]">
-                  &copy; 2023 ARPA - Todos os direitos reservados
-                </h4>
-              </div>
-            </div>
-          </div>
-        </footer>
+
+        <Footer />
       </main>
     </HomeCointainer>
   );
