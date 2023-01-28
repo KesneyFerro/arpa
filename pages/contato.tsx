@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 
 import Navbar from "../components/layout/navbar";
+import Footer from "../components/layout/arpa_footer";
 
 const Contact: NextPage = () => {
   return (
@@ -12,7 +13,88 @@ const Contact: NextPage = () => {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Navbar />
-      <main className="mt-[70px]"></main>
+      <main className="mt-[50px] lg:mt-[70px]">
+        <div className="contentDisplay flex flex-col lg:flex-row justify-center w-full  h-[1500px] lg:justify-between">
+          <div className="leftSideContent flex flex-col items-center full mx-[50px]">
+            <div className="titleForm w-full">
+              <h2 className="text-5xl font-bold text-[#153046] text-center">
+                Fale Conosco
+              </h2>
+              <h3 className="mt-5 mb-10 text-sm font-medium text-[#153046] text-center">
+                Tem Alguma dúvida, crítica ou sugestão? Preencha o formulário
+                abaixo, responderemos o mais rápido possível
+              </h3>
+            </div>
+            <div className="mainForm w-full">
+              <div className="rowForm w-full flex flex-row items-center justify-between gap-[30px]">
+                <div className="inputForm w-full">
+                  <h4 className="text-xl font-semibold text-[#153046]">Nome</h4>
+                  <input
+                    className="focus:outline-[#87abd5] w-full p-[20px] rounded-full bg-white shadow-lg my-5"
+                    type="text"
+                    placeholder="Ex: Felipe"
+                  />
+                </div>
+                <div className="inputForm w-auto">
+                  <h4 className="text-xl font-semibold text-[#153046]">
+                    Série
+                  </h4>
+                  <select className="focus:outline-[#87abd5] w-auto p-[20px] rounded-full bg-white shadow-lg my-5 appearance-none font-normal text-md text-[#153046]">
+                    <option className="bg-white rounded-xl">9°EF</option>
+                    <option className="bg-white rounded-xl">1°EM</option>
+                    <option className="bg-white rounded-xl">2°EM</option>
+                    <option className="bg-white rounded-xl">3°EM</option>
+                  </select>
+                </div>
+              </div>
+              <div className="rowForm w-full">
+                <div className="inputForm w-full">
+                  <h4 className="text-xl font-semibold text-[#153046]">
+                    E-mail *
+                  </h4>
+                  <input
+                    className="focus:outline-[#87abd5] w-full p-[20px] rounded-full bg-white shadow-lg my-5"
+                    type="text"
+                    placeholder="axxxxxx@alunos.colband.com.br"
+                  />
+                </div>
+              </div>
+              <div className="rowForm w-full">
+                <div className="inputForm w-full">
+                  <h4 className="text-xl font-semibold text-[#153046]">
+                    Assunto ou Disciplina *
+                  </h4>
+                  <input
+                    className="focus:outline-[#87abd5] w-full p-[20px] rounded-full bg-white shadow-lg my-5"
+                    type="text"
+                    placeholder="Ex.: Biologia/Artrópodes"
+                  />
+                </div>
+              </div>
+              <div className="rowForm w-full">
+                <div className="inputForm w-full">
+                  <h4 className="text-xl font-semibold text-[#153046]">
+                    Dúvida ou Sugestão
+                  </h4>
+                  <textarea
+                    className="focus:outline-[#87abd5] w-full p-[20px] rounded-2xl bg-white shadow-lg my-5"
+                    placeholder="Escreva sua dúvida ou sugestão aqui..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="rightSideDisplay  my-[50px] lg:mx-[50px] flex flex-col items-center justify-center]">
+            <img
+              src="email_us_mobile.svg"
+              alt=""
+              className="block lg:hidden min-w-[250px]"
+            />
+            <img src="email_us_mobile.svg" alt="" className="hidden lg:block" />
+          </div>
+        </div>
+      </main>
+      <Footer />
     </>
   );
 };
