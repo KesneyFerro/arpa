@@ -3,7 +3,6 @@ import Head from "next/head";
 import React from "react";
 import { HomeCointainer } from "../styles/components/home";
 import { BsCaretDownFill } from "react-icons/bs";
-
 import Navbar from "../components/layout/navbar";
 import Footer from "../components/layout/arpa_footer";
 import GradeButton from "../components/layout/home/grade_button";
