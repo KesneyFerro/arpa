@@ -1,8 +1,4 @@
-import { BsInstagram } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-import { FaTiktok } from "react-icons/fa";
-import Link from "next/link";
+import MediaButton from "./home/media_button";
 
 const Footer = () => {
   return (
@@ -66,37 +62,34 @@ const Footer = () => {
           </h3>
           <div className="mediaFooter flex flex-col sm:flex-row justify-between gap-[10px] sm:gap-[25px] my-[20px] sm:mb-[40px] sm:mt-[20px] lg:mt-[40px]">
             <div className="rowDivision1MediaFooter flex justify-center gap-[10px] sm:gap-[25px]">
-              <Link
-                target={"_blank"}
-                href={"https://www.instagram.com/arpa2band/"}
-                className="p-[20px] sm:p-[25px] shadow-lg bg-white rounded-full"
-              >
-                <BsInstagram className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
-              </Link>
-              <Link
-                target={"_blank"}
-                href={
+              <MediaButton
+                number={1}
+                link={"https://www.instagram.com/arpa3band/"}
+                size={"text-[25px] sm:text-[40px]"}
+                padding={"p-[20px] sm:p-[25px]"}
+              />
+              <MediaButton
+                number={2}
+                link={
                   "https://www.youtube.com/channel/UCf3BKzdLV3b_7JglQJFHiqg"
                 }
-                className="p-[20px] sm:p-[25px] shadow-lg bg-white rounded-full"
-              >
-                <BsYoutube className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
-              </Link>
+                size={"text-[25px] sm:text-[40px]"}
+                padding={"p-[20px] sm:p-[25px]"}
+              />
             </div>
             <div className="rowDivision2MediaFooter flex justify-center gap-[10px] sm:gap-[25px]">
-              <Link
-                href={"/contato"}
-                className="p-[20px] sm:p-[25px] shadow-lg bg-white rounded-full"
-              >
-                <MdEmail className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
-              </Link>
-              <Link
-                target={"_blank"}
-                href={"https://www.tiktok.com/pt-BR"}
-                className="p-[20px] sm:p-[25px] shadow-lg bg-white rounded-full"
-              >
-                <FaTiktok className="text-[25px] sm:text-[40px] text-[#60A2F2]" />
-              </Link>
+              <MediaButton
+                number={3}
+                link={"/contato"}
+                size={"text-[25px] sm:text-[40px]"}
+                padding={"p-[20px] sm:p-[25px]"}
+              />
+              <MediaButton
+                number={4}
+                link={"https://www.tiktok.com/pt-BR"}
+                size={"text-[25px] sm:text-[40px]"}
+                padding={"p-[20px] sm:p-[25px]"}
+              />
             </div>
           </div>
           <hr className="my-[20px] w-[90%] h-[5px] bg-gradient-to-r from-[#152F47] via-[#185b9600] to-[#152F47] rounded-full sm:h-[7px]" />

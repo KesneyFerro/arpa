@@ -6,7 +6,7 @@ import { BsCaretDownFill } from "react-icons/bs";
 
 import Navbar from "../components/layout/navbar";
 import Footer from "../components/layout/arpa_footer";
-import GradeButon from "../components/layout/home/grade_button";
+import GradeButton from "../components/layout/home/grade_button";
 import FactBox from "../components/layout/home/facts";
 import BlueButton from "../components/layout/blue_button";
 
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
           </div>
           <div className="homeGrades mx-5 mt-[50px] lg:mt-0 flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-[25px] xl:gap-[50px] drop-shadow-md">
             <div className="gradesRow1 flex flex-row justify-center items-center gap-3 lg:gap-[25px] xl:gap-[50px]">
-              <GradeButon
+              <GradeButton
                 title="9°EF"
                 alt="c1"
                 image="/c1.png"
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
                 strokeColor="#3392FF"
                 backgroundColor="#AFD4FF"
               />
-              <GradeButon
+              <GradeButton
                 title="1°EM"
                 alt="c2"
                 image="/c2.png"
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
               />
             </div>
             <div className="gradesRow2 flex flex-row justify-center items-center gap-3 lg:gap-[25px] xl:gap-[50px]">
-              <GradeButon
+              <GradeButton
                 title="2°EM"
                 alt="c3"
                 image="/c3.png"
@@ -129,7 +129,7 @@ const Home: NextPage = () => {
                 backgroundColor="#D2E2EE"
                 spacing
               />
-              <GradeButon
+              <GradeButton
                 title="3°EM"
                 alt="c4"
                 image="/c4.png"

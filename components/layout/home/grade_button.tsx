@@ -8,7 +8,7 @@ interface Props {
   spacing?: boolean;
 }
 
-const GradeButon = ({
+const GradeButton = ({
   title,
   color,
   image,
@@ -81,4 +81,4 @@ const GradeButon = ({
   );
 };
 
-export default GradeButon;
+export default GradeButton;

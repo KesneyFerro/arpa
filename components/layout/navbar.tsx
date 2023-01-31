@@ -90,7 +90,7 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { delay: 0.3 } }}
               exit={{ opacity: 0 }}
-              className="flex justify-center items-center gap-y-[10px] flex-col"
+              className="flex justify-center items-center gap-y-[10px] flex-col lg:hidden"
             >
               <h3>Home</h3>
               <h3>Resumos</h3>

@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
-
+import MediaButton from "../components/layout/home/media_button";
 import Navbar from "../components/layout/navbar";
 import Footer from "../components/layout/arpa_footer";
 
@@ -14,7 +14,7 @@ const Contact: NextPage = () => {
       </Head>
       <Navbar />
       <main className="mt-[50px] lg:mt-[70px]">
-        <div className="contentDisplay flex flex-col lg:flex-row justify-center w-full  h-[1500px] lg:justify-between">
+        <div className="contentDisplay flex flex-col lg:flex-row justify-center w-full  h-auto lg:justify-between">
           <div className="leftSideContent flex flex-col items-center full mx-[50px]">
             <div className="titleForm w-full">
               <h2 className="text-5xl font-bold text-[#153046] text-center">
@@ -84,13 +84,27 @@ const Contact: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="rightSideDisplay  my-[50px] lg:mx-[50px] flex flex-col items-center justify-center]">
+          <div className="rightSideDisplay  mb-[200px] mt-[100px] lg:mx-[50px] flex flex-col items-center justify-center">
             <img
               src="email_us_mobile.svg"
               alt=""
               className="block lg:hidden min-w-[250px]"
             />
             <img src="email_us_mobile.svg" alt="" className="hidden lg:block" />
+            <div className="buttonsRightSide flex justify-center items-center gap-5">
+              <MediaButton
+                number={2}
+                link={""}
+                size={"text-[40px]"}
+                padding={"p-[25px] sm:p-[25px]"}
+              />
+              <MediaButton
+                number={1}
+                link={"https://www.instagram.com/arpa3band/"}
+                size={"text-[40px]"}
+                padding={"p-[25px] sm:p-[25px]"}
+              />
+            </div>
           </div>
         </div>
       </main>
