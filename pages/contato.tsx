@@ -16,14 +16,16 @@ const Contact: NextPage = () => {
       <Navbar />
       <main className="mt-[50px] lg:mt-[70px]">
         <div className="contentDisplay flex flex-col xl:flex-row justify-center h-auto mb-[200px] xl:mx-[100px] xl:justify-start">
-          <div className="leftSideContent flex flex-col items-center full mx-[50px]">
+          <div className="leftSideContent flex flex-col items-center lg:min-w-[700px] mx-[50px]">
             <div className="titleForm w-full">
               <h2 className="text-5xl font-bold text-[#153046] text-center">
                 Fale Conosco
               </h2>
               <h3 className="mt-5 mb-10 text-sm font-medium text-[#153046] text-center">
-                Tem Alguma dúvida, crítica ou sugestão? Preencha o formulário
-                abaixo, responderemos o mais rápido possível
+                Tem Alguma dúvida, crítica ou sugestão?
+                <br />
+                Preencha o formulário abaixo, responderemos o mais rápido
+                possível
               </h3>
             </div>
             <div className="mainForm w-full flex flex-col items-center">
@@ -85,10 +87,11 @@ const Contact: NextPage = () => {
               </div>
               <BlueButton
                 text="Enviar"
-                paddingX="50px"
+                paddingX="100px"
                 paddingY="20px"
                 fontWeight="600"
                 fontSize="xl"
+                mt="20px"
               />
             </div>
           </div>
@@ -96,12 +99,12 @@ const Contact: NextPage = () => {
             <img
               src="email_us_mobile.svg"
               alt=""
-              className="flex lg:hidden min-w-[250px] sm:min-w-[400px]"
+              className="flex lg:hidden min-w-[250px] sm:min-w-[400px] mt-[100px]"
             />
             <img
               src="email_us_desktop.svg"
               alt=""
-              className="hidden lg:block w-[500px]"
+              className="hidden lg:block w-[500px] mt-[100px] xl:mt-[0px]"
             />
             <div className="buttonsRightSide flex justify-center items-center gap-5 mt-[30px]">
               <MediaButton

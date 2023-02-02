@@ -29,7 +29,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="text-center">
-            <Link href={"/"} className="text-center">
+            <Link href={"/resumo"} className="text-center">
               Resumos
             </Link>
           </li>
@@ -92,11 +92,21 @@ const Navbar = () => {
               exit={{ opacity: 0 }}
               className="flex justify-center items-center gap-y-[10px] flex-col lg:hidden"
             >
-              <h3>Home</h3>
-              <h3>Resumos</h3>
-              <h3>Conteúdos</h3>
-              <h3>Contato e Perguntas</h3>
-              <h3>Faça Parte</h3>
+              <h3 className="">
+                <Link href={"/"}>Home</Link>
+              </h3>
+              <h3 className="">
+                <Link href={"/resumo"}>Resumos</Link>
+              </h3>
+              <h3 className="">
+                <Link href={"/"}>Conteúdos</Link>
+              </h3>
+              <h3 className="">
+                <Link href={"/contato"}>Contato e Perguntas</Link>
+              </h3>
+              <h3 className="">
+                <Link href={"/"}>Faça Parte</Link>
+              </h3>
               <h3 className="mb-5">Conheça o Projeto</h3>
               <BlueButton
                 text="Entrar"

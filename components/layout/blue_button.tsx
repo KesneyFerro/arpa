@@ -4,6 +4,7 @@ interface Props {
   paddingX: string;
   fontWeight: string;
   fontSize?: string;
+  mt?: string;
 }
 
 const BlueButton = ({
@@ -12,6 +13,7 @@ const BlueButton = ({
   paddingX,
   fontWeight,
   fontSize = "sm",
+  mt = "0",
 }: Props) => {
   return (
     <button
@@ -19,7 +21,7 @@ const BlueButton = ({
         padding: `${paddingY} ${paddingX}`,
         fontWeight: fontWeight,
       }}
-      className={`bg-[#60A2F2] text-white rounded-full text-${fontSize} flex items-center justify-center`}
+      className={`bg-[#60A2F2] text-white rounded-full text-${fontSize} mt-[${mt}] flex items-center justify-center`}
     >
       {text}
     </button>
