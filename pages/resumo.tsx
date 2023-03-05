@@ -15,61 +15,62 @@ const Summaries: NextPage = () => {
       </Head>
       <Navbar />
       <main className="mt-[50px] lg:mt-[70px]">
-        <div className="contentDisplay flex flex-col justify-center h-auto mb-[200px] xl:mx-[100px] xl:justify-start">
-          <div className="titleForm w-full">
-            <h2 className="text-5xl font-bold text-[#153046] text-center">
+        <div className="contentDisplay flex flex-col justify-center items-center h-auto mb-[200px] xl:mx-[100px]">
+          <div className="titleForm w-full px-[20px]">
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#153046] text-center">
               Confira nossos resumos
             </h2>
-            <h3 className="mt-5 mb-10 text-sm font-medium text-[#153046] text-center">
+            <h3 className="mt-5 mb-5 text-xs sm:text-sm font-medium text-[#153046] text-center">
               Aqui você tem fácil acesso aos resumos de todos os trimestres do
               ano!!!
               <br />
               Selecione sua série e comece os estudos
             </h3>
           </div>
-          <div className="searchForForm w-[90%] flex flex-row justify-center items-center">
-            <div className="rowForm w-full flex flex-row items-center justify-center gap-[15px]">
-              <hr className="my-[20px] w-full h-[5px] bg-gradient-to-r from-[#152F47] to-[#185b9600] rounded-full sm:h-[7px]" />
+          <div className="searchForForm mb-[50px] sm:mb-[80px] px-[20px] sm:px-[50px] xl:px-0 w-full flex flex-row justify-center items-center gap-[15px]">
+            <hr className="w-full h-[5px] bg-gradient-to-r from-[#152F47] to-[#185b9600] rounded-full sm:h-[7px]" />
 
-              <div className="inputForm w-auto">
-                <select className="focus:outline-[#87abd5] w-auto py-[10px] px-[20px] sm:py-[20px] sm:px-[40px] rounded-full bg-white shadow-lg my-5 appearance-none font-semibold text-md text-[#153046]">
-                  <option className="bg-white rounded-xl">2023</option>
-                  <option className="bg-white rounded-xl">2022</option>
-                  <option className="bg-white rounded-xl">2021</option>
-                  <option className="bg-white rounded-xl">2020</option>
-                  <option className="bg-white rounded-xl">2019</option>
-                  <option className="bg-white rounded-xl">2018</option>
-                </select>
-              </div>
+            <div className="inputForm w-auto">
+              <select className="focus:outline-[#87abd5] w-auto py-[10px] px-[20px] sm:py-[20px] sm:px-[40px] rounded-full bg-white shadow-lg appearance-none font-semibold text-md text-[#153046]">
+                <option className="bg-white rounded-xl">2023</option>
+                <option className="bg-white rounded-xl">2022</option>
+                <option className="bg-white rounded-xl">2021</option>
+                <option className="bg-white rounded-xl">2020</option>
+                <option className="bg-white rounded-xl">2019</option>
+                <option className="bg-white rounded-xl">2018</option>
+              </select>
+            </div>
 
-              <div className="inputForm w-auto">
-                <select className="focus:outline-[#87abd5] w-auto py-[10px] px-[20px] sm:py-[20px] sm:px-[40px] rounded-full bg-white shadow-lg my-5 appearance-none font-semibold text-md text-[#153046]">
-                  <option className="bg-white rounded-xl">9°EF</option>
-                  <option className="bg-white rounded-xl">1°EM</option>
-                  <option className="bg-white rounded-xl">2°EM</option>
-                  <option className="bg-white rounded-xl">3°EM</option>
-                </select>
-              </div>
+            <div className="inputForm w-auto">
+              <select className="focus:outline-[#87abd5] w-auto py-[10px] px-[20px] sm:py-[20px] sm:px-[40px] rounded-full bg-white shadow-lg my-5 appearance-none font-semibold text-md text-[#153046]">
+                <option className="bg-white rounded-xl">9°EF</option>
+                <option className="bg-white rounded-xl">1°EM</option>
+                <option className="bg-white rounded-xl">2°EM</option>
+                <option className="bg-white rounded-xl">3°EM</option>
+              </select>
             </div>
           </div>
-          <div className="searchForForm w-full flex flex-col items-center gap-[30px]">
+          <div className="w-full flex flex-col items-center justify-center gap-[30px] lg:flex-row mb-[50px] lg:gap-[50px]">
             <Term
               text={"1ºTri"}
-              rounded={"50px"}
-              boxSize={"250px"}
-              textColor={"#000000"}
+              strokeColor={"#72A1C6"}
+              textColor={"#8BC1EC"}
+              font={"semibold"}
+              src={"/BGTerm1.svg"}
             />
             <Term
               text={"2ºTri"}
-              rounded={"50px"}
-              boxSize={"250px"}
-              textColor={"#000000"}
+              strokeColor={"#CC8760"}
+              textColor={"#D3A185"}
+              font={"semibold"}
+              src={"/BGTerm2.svg"}
             />
             <Term
               text={"3ºTri"}
-              rounded={"50px"}
-              boxSize={"250px"}
-              textColor={"#000000"}
+              strokeColor={"#C57F7F"}
+              textColor={"#EC8B8B"}
+              font={"semibold"}
+              src={"/BGTerm3.svg"}
             />
           </div>
 
@@ -79,7 +80,6 @@ const Summaries: NextPage = () => {
             paddingY="20px"
             fontWeight="600"
             fontSize="xl"
-            mt="20px"
           />
         </div>
       </main>
