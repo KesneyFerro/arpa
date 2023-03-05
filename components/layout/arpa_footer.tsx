@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="relative flex flex-col items-center h-[450px] lg:h-[600px] bg-[#fdfdfd]">
       <div className="bgFooter overflow-hidden absolute w-full top-[-130px] sm:top-[-150px]">
         <img
-          src="footerBg2.png"
+          src="/footerBg2.png"
           alt=""
           className="w-full h-[350px] sm:h-[450px] lg:h-[600px] xl:h-[700px] 2xl:h-[780px]"
         />
@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="mainFooter absolute flex flex-col items-center justify-end  w-full h-full">
           <div className="logoFooter rounded-full bg-white h-[100px] w-[100px] shadow-lg flex  items-center justify-center lg:w-[150px] lg:h-[150px]">
             <img
-              src="new_arpa_logo.svg"
+              src="/new_arpa_logo.svg"
               alt="logo"
               className="min-w-[29px] pr-3 lg:pr-5 lg:min-w-[45px]"
             />
